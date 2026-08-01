@@ -3,152 +3,213 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marilyn Ogunfowora — Pilates Instructor</title>
+<title>Marilyn's Pilates | Free Pop-Up Pilates Classes in Marietta, GA</title>
+<meta name="description" content="Marilyn's Pilates offers free community pop-up Pilates classes in Marietta, GA, taught by Marilyn, a Pilates instructor currently working toward full certification. Sign up for the newsletter to get upcoming free class dates.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'%3E%3Cg stroke='%237a0e3b' stroke-width='9' stroke-linecap='round'%3E%3Cline x1='144' y1='88' x2='181' y2='78'/%3E%3Cline x1='140' y1='77' x2='177' y2='56' stroke-dasharray='13 11'/%3E%3Cline x1='133' y1='68' x2='166' y2='34'/%3E%3Cline x1='123' y1='60' x2='149' y2='16' stroke-dasharray='13 11'/%3E%3Cline x1='112' y1='56' x2='126' y2='4'/%3E%3Cline x1='100' y1='54' x2='100' y2='0' stroke-dasharray='13 11'/%3E%3Cline x1='88' y1='56' x2='74' y2='4'/%3E%3Cline x1='77' y1='60' x2='52' y2='16' stroke-dasharray='13 11'/%3E%3Cline x1='68' y1='68' x2='34' y2='34'/%3E%3Cline x1='60' y1='77' x2='23' y2='56' stroke-dasharray='13 11'/%3E%3Cline x1='56' y1='88' x2='19' y2='78'/%3E%3C/g%3E%3Cpath d='M60 100 A40 40 0 0 1 140 100 Z' fill='%237a0e3b'/%3E%3Cline x1='10' y1='100' x2='190' y2='100' stroke='%237a0e3b' stroke-width='9' stroke-linecap='round'/%3E%3C/svg%3E">
 <style>
   :root{
-    --ink:#2a1420;
-    --dusk:#3a1830;
-    --cream:#fff6ee;
-    --cream-2:#ffe9d6;
+    --pink-dark:#4d0a2c;
+    --pink-deep:#7a0e3b;
+    --pink-hot:#d6127a;
+    --pink-vivid:#ff2f96;
     --orange:#ef6a2c;
-    --orange-deep:#c94f1c;
-    --pink:#d92662;
-    --pink-deep:#a8134f;
-    --peach:#ffb37a;
-    --line: rgba(42,20,32,0.13);
-    --line-light: rgba(255,246,238,0.16);
-    --display: 'Fraunces', serif;
-    --body: 'Inter', sans-serif;
-    --mono: 'IBM Plex Mono', monospace;
+    --cream:#fff2e8;
+    --orange-light:#ffb37a;
+    --ink:#1c0a12;
+    --display: 'Poppins', sans-serif;
+    --title: 'Poppins', sans-serif;
+    --body: 'Poppins', sans-serif;
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;}
+  body{
+    margin:0;color:var(--cream);
+    font-family:var(--body);line-height:1.55;
+    background-color:var(--pink-dark);
+    position:relative;
+  }
   a{color:inherit;}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 32px;}
-  @media (max-width:640px){.wrap{padding:0 20px;}}
-  h1,h2,h3{font-family:var(--display);font-weight:700;margin:0;color:var(--ink);}
-  h1{font-weight:900;}
-  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--pink-deep);}
-  .eyebrow.on-dark{color:var(--peach);}
+  img{display:block;max-width:100%;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px;position:relative;z-index:1;}
+  @media (max-width:640px){.wrap{padding:0 18px;}}
+  h1,h2,h3{font-family:var(--title);font-weight:700;margin:0;color:var(--cream);letter-spacing:0.01em;}
+  .display{font-family:var(--display);}
+  p{margin:0;}
+  .eyebrow{font-family:var(--body);font-weight:700;font-size:12.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--orange-light);}
+
+  /* GLITTER TEXT */
+  .glitter{
+    color:var(--orange-light);
+    text-shadow:none;
+  }
+
+  /* MARQUEE BANNER */
+  /* marquee bar removed for a calmer layout */
 
   /* NAV */
-  header.site-nav{position:sticky;top:0;z-index:50;background:rgba(255,246,238,0.9);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 32px;max-width:1080px;margin:0 auto;}
+  header.site-nav{position:sticky;top:0;z-index:50;background:var(--pink-deep);border-bottom:5px solid var(--ink);box-shadow:0 4px 0 rgba(0,0,0,0.25);}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;max-width:1120px;margin:0 auto;}
   .brand-mark{display:flex;align-items:center;gap:10px;text-decoration:none;}
-  .brand-mark .stamp{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg, var(--orange), var(--pink));display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;font-weight:600;color:var(--cream);}
-  .brand-mark .name{font-family:var(--display);font-weight:700;font-size:17px;}
-  nav.links{display:flex;gap:26px;font-size:14px;}
-  nav.links a{text-decoration:none;color:var(--ink);opacity:0.72;}
-  nav.links a:hover{opacity:1;}
-  .nav-cta{font-family:var(--mono);font-size:12px;background:var(--pink-deep);color:var(--cream);padding:10px 18px;border-radius:20px;text-decoration:none;}
-  .nav-cta:hover{background:var(--orange-deep);}
+  .brand-mark .sun-mark{width:30px;height:19px;color:var(--orange-light);}
+  .brand-mark .name{font-family:var(--title);font-weight:400;font-size:15px;color:var(--cream);}
+  nav.links{display:flex;gap:10px;font-size:13px;}
+  nav.links a{
+    text-decoration:none;color:var(--ink);background:var(--orange-light);
+    padding:8px 14px;border-radius:6px;font-weight:700;
+    border:2px solid var(--ink);box-shadow:2px 2px 0 var(--ink);
+  }
+  nav.links a:hover{background:var(--cream);}
+  .nav-cta{
+    font-family:var(--body);font-weight:700;font-size:12.5px;background:var(--orange);color:var(--ink);
+    padding:10px 18px;border-radius:6px;text-decoration:none;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);
+  }
+  .nav-cta:hover{background:var(--cream);}
   .nav-mobile-hide{display:flex;}
   @media (max-width:820px){ .nav-mobile-hide{display:none;} }
 
+  /* SUN ICON */
+  .sun-mark svg{display:block;width:100%;height:100%;}
+  .hero-sun-watermark{position:absolute;top:6%;right:4%;width:220px;height:auto;color:rgba(255,242,232,0.4);z-index:1;pointer-events:none;}
+  @media (max-width:760px){ .hero-sun-watermark{width:130px;} }
+  .sun-divider{display:flex;align-items:center;justify-content:center;gap:14px;padding:34px 0;}
+  .sun-divider .sun-mark{width:56px;height:35px;color:var(--orange-light);}
+  .sun-divider .sparkle{font-size:22px;}
+
   /* HERO */
-  .hero{position:relative;background:linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%);overflow:hidden;border-bottom:1px solid var(--line);}
-  .hero-inner{position:relative;max-width:1080px;margin:0 auto;padding:96px 32px 76px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:48px;align-items:center;}
-  @media (max-width:880px){ .hero-inner{grid-template-columns:1fr;padding:60px 20px;} }
-  .plate{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--cream);background:linear-gradient(90deg, var(--orange), var(--pink-deep));padding:6px 14px;border-radius:20px;margin-bottom:22px;}
-  .hero h1{font-size:clamp(34px,5.4vw,58px);line-height:1.03;letter-spacing:-0.01em;}
-  .tagline{
-    font-family:var(--display);font-style:italic;font-weight:600;
-    font-size:clamp(22px,2.8vw,30px);
-    background:linear-gradient(90deg, var(--orange-deep), var(--pink-deep));
-    -webkit-background-clip:text;background-clip:text;color:transparent;
-    margin-top:8px;display:block;
+  .hero{
+    position:relative;min-height:88vh;display:flex;align-items:flex-end;
+    background-image:url('https://images.unsplash.com/photo-1557818776-fa01e020e138?auto=format&fit=crop&w=1800&q=80');
+    background-size:cover;background-position:center 65%;
+    border-bottom:8px dashed var(--orange-light);
   }
-  .hero p.sub{font-size:17.5px;color:rgba(42,20,32,0.72);max-width:46ch;margin-top:20px;}
-  .hero-ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
-  .btn{font-family:var(--mono);font-size:13px;padding:14px 24px;border-radius:30px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:transform .15s ease, background .15s ease;border:1px solid transparent;}
-  .btn:hover{transform:translateY(-1px);}
-  .btn-primary{background:linear-gradient(90deg, var(--orange), var(--pink-deep));color:var(--cream);}
-  .btn-primary:hover{filter:brightness(0.94);}
-  .btn-ghost{border-color:var(--ink);color:var(--ink);}
-  .btn-ghost:hover{border-color:var(--pink-deep);color:var(--pink-deep);}
+  .hero::before{
+    content:"";position:absolute;inset:0;background-color:rgba(77,10,44,0.6);z-index:0;
+  }
+  .hero-inner{position:relative;z-index:1;width:100%;max-width:1120px;margin:0 auto;padding:56px 28px 64px;}
+  @media (max-width:640px){ .hero-inner{padding:40px 18px 48px;} }
+  .hero h1{
+    font-size:clamp(38px,8vw,84px);line-height:1.02;
+    text-shadow:3px 3px 0 var(--ink), -1px -1px 0 var(--orange-light);
+  }
+  .tagline{
+    font-family:var(--title);font-size:clamp(18px,2.6vw,26px);color:var(--orange-light);
+    margin-top:16px;display:block;text-shadow:2px 2px 0 var(--ink);
+  }
+  .hero p.sub{font-size:16.5px;color:rgba(255,242,232,0.92);max-width:48ch;margin-top:22px;background:rgba(28,10,18,0.35);padding:14px 16px;border-radius:8px;border:2px dotted var(--orange-light);}
+  .hero-ctas{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap;}
+  .btn{
+    font-family:var(--body);font-weight:700;font-size:13.5px;padding:14px 24px;border-radius:8px;text-decoration:none;
+    display:inline-flex;align-items:center;gap:8px;border:2.5px solid var(--ink);
+    box-shadow:4px 4px 0 var(--ink);transition:transform .1s ease;
+  }
+  .btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);}
+  .btn-primary{background:var(--orange);color:var(--ink);}
+  .btn-ghost{background:var(--cream);color:var(--ink);}
 
-  /* SUNRISE CUTOUT GRAPHIC */
-  .sunrise-frame{position:relative;aspect-ratio:4/5;border-radius:8px;overflow:hidden;background:linear-gradient(180deg, #f7c6a3 0%, #f2a06a 32%, #e3703f 58%, var(--dusk) 100%);}
-  .sunrise-frame svg{position:absolute;inset:0;width:100%;height:100%;}
-  .sunrise-frame .cap{position:absolute;bottom:20px;left:22px;font-family:var(--mono);font-size:12px;color:rgba(255,246,238,0.85);}
-
-  /* SECTIONS */
-  section{padding:84px 0;}
+  /* MODULE (profile box) */
+  section{padding:76px 0;position:relative;}
   section.tight{padding:56px 0;}
-  .section-head{max-width:600px;margin-bottom:40px;}
-  .section-head h2{font-size:clamp(26px,3.2vw,38px);margin-top:12px;line-height:1.1;}
-  .section-head p{margin-top:14px;color:rgba(42,20,32,0.68);font-size:16px;}
-  .divider{height:1px;background:var(--line);border:none;margin:0;position:relative;}
-  .divider .sun-chip{position:absolute;left:50%;top:-9px;transform:translateX(-50%);width:18px;height:9px;overflow:hidden;}
-  .divider .sun-chip::before{content:"";position:absolute;top:0;left:0;width:18px;height:18px;border-radius:50%;background:linear-gradient(90deg, var(--orange), var(--pink-deep));}
+  .module{background:var(--cream);color:var(--ink);border:3px solid var(--ink);border-radius:10px;box-shadow:6px 6px 0 var(--ink);overflow:hidden;}
+  .module-title{
+    background:var(--pink-hot);color:var(--cream);
+    font-family:var(--title);font-size:15px;letter-spacing:0.04em;padding:14px 22px;
+    border-bottom:3px solid var(--ink);display:flex;align-items:center;gap:8px;
+  }
+  .module-body{padding:28px 26px;}
+  .section-head{max-width:640px;margin-bottom:36px;}
+  .section-head h2{font-size:clamp(24px,3.6vw,36px);margin-top:10px;line-height:1.15;color:var(--cream);text-shadow:2px 2px 0 var(--ink);}
+  .section-head p{margin-top:12px;color:rgba(255,242,232,0.82);font-size:15.5px;}
 
   /* ABOUT */
-  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;}
   @media (max-width:860px){ .about-grid{grid-template-columns:1fr;} }
-  .about-grid p{font-size:16.5px;color:rgba(42,20,32,0.78);margin-top:14px;}
-  .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;}
-  .badges span{font-family:var(--mono);font-size:11.5px;border:1px solid var(--pink-deep);color:var(--pink-deep);padding:7px 14px;border-radius:20px;}
+  .about-grid p{font-size:15.5px;color:rgba(28,10,18,0.82);margin-top:12px;}
+  .status-line{
+    font-family:var(--body);font-weight:700;font-size:13.5px;color:var(--pink-hot);
+    background:#fff0f7;border:2px dashed var(--pink-hot);border-radius:8px;padding:10px 14px;margin-top:18px;display:inline-block;
+  }
+  .badge{
+    font-family:var(--body);font-weight:700;font-size:11.5px;background:var(--orange-light);color:var(--ink);
+    padding:7px 14px;border-radius:20px;border:2px solid var(--ink);display:inline-block;margin-top:16px;
+  }
 
-  /* JOURNEY TIMELINE */
-  .timeline{position:relative;padding-left:2px;}
-  .tl-item{position:relative;padding:0 0 40px 34px;border-left:2px solid var(--line);}
-  .tl-item:last-child{border-color:transparent;padding-bottom:0;}
-  .tl-item::before{content:"";position:absolute;left:-8px;top:2px;width:14px;height:14px;border-radius:50%;background:var(--cream);border:2px solid var(--orange);}
-  .tl-item.current::before{background:linear-gradient(135deg, var(--orange), var(--pink-deep));border-color:var(--pink-deep);}
-  .tl-item .stage{font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink-deep);}
-  .tl-item h3{font-size:20px;margin-top:8px;}
-  .tl-item p{font-size:14.5px;color:rgba(42,20,32,0.7);margin-top:6px;max-width:52ch;}
+  /* PHOTO BREAK, polaroid style */
+  .photo-break{padding:70px 0;}
+  .polaroid{
+    background:var(--cream);padding:14px 14px 54px;border:3px solid var(--ink);border-radius:4px;
+    box-shadow:7px 7px 0 var(--ink);max-width:520px;margin:0 auto;position:relative;
+  }
+  .polaroid img{border-radius:2px;width:100%;height:280px;object-fit:cover;}
+  .polaroid .cap{
+    position:absolute;bottom:14px;left:0;right:0;text-align:center;
+    font-family:var(--title);font-size:14px;color:var(--pink-hot);
+  }
 
-  /* POP-UPS (ticket cards) */
-  .pop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  /* JOURNEY */
+  .journey-msg{font-size:15.5px;color:rgba(28,10,18,0.82);margin-top:12px;max-width:60ch;}
+
+  /* VISITOR COUNTER */
+  .counter-box{
+    display:inline-flex;align-items:center;gap:10px;background:var(--ink);border:3px solid var(--orange-light);
+    border-radius:8px;padding:10px 16px;font-family:'Courier New', monospace;
+  }
+  .counter-digits{background:#0b0006;color:var(--orange);font-weight:700;letter-spacing:4px;padding:6px 10px;border-radius:4px;font-size:18px;}
+  .counter-label{font-family:var(--body);font-size:11px;color:var(--cream);}
+
+  /* POP-UPS bulletin */
+  .pop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
   @media (max-width:900px){ .pop-grid{grid-template-columns:1fr;} }
-  .ticket{background:var(--cream);border:1.5px dashed var(--pink-deep);border-radius:8px;padding:24px 22px;position:relative;}
-  .ticket .free-tag{font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;background:linear-gradient(90deg, var(--orange), var(--pink-deep));color:var(--cream);padding:5px 10px;border-radius:20px;display:inline-block;}
-  .ticket .date{font-family:var(--mono);font-size:22px;color:var(--ink);margin-top:14px;}
-  .ticket .place{font-size:14px;color:rgba(42,20,32,0.65);margin-top:6px;}
-  .ticket .desc{font-size:13.5px;color:rgba(42,20,32,0.6);margin-top:10px;border-top:1px dashed var(--line);padding-top:10px;}
-  .ticket .perf{font-family:var(--mono);font-size:10.5px;color:var(--pink-deep);opacity:0.75;margin-top:12px;}
+  .flyer{
+    background:var(--cream);color:var(--ink);border:3px dashed var(--pink-hot);border-radius:8px;padding:22px 20px;position:relative;
+    box-shadow:5px 5px 0 var(--ink);
+  }
+  /* flyers now sit flat, no tilt, for a calmer layout */
+  .pin{position:absolute;top:-10px;left:50%;transform:translateX(-50%);font-size:20px;}
+  .flyer .free-tag{font-family:var(--title);font-size:12px;background:var(--orange);color:var(--ink);padding:6px 12px;border-radius:20px;border:2px solid var(--ink);display:inline-block;}
+  .flyer .date{font-family:var(--title);font-size:19px;color:var(--pink-hot);margin-top:14px;}
+  .flyer .desc{font-size:13.5px;color:rgba(28,10,18,0.72);margin-top:10px;border-top:2px dotted rgba(28,10,18,0.3);padding-top:10px;}
+  .flyer .perf{font-family:var(--body);font-weight:700;font-size:10.5px;color:var(--pink-hot);margin-top:12px;}
 
-  /* NEWSLETTER FORM */
-  .newsletter{background:var(--dusk);color:var(--cream);border-radius:10px;padding:52px;position:relative;overflow:hidden;}
-  .newsletter::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 85% -10%, rgba(239,106,44,0.35), transparent 60%);pointer-events:none;}
-  @media (max-width:640px){ .newsletter{padding:32px 24px;} }
-  .newsletter-inner{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;}
-  @media (max-width:860px){ .newsletter-inner{grid-template-columns:1fr;} }
-  .newsletter h2{color:var(--cream);font-size:clamp(26px,3vw,34px);}
-  .newsletter p{color:rgba(255,246,238,0.75);margin-top:12px;font-size:15.5px;max-width:44ch;}
+  /* GUESTBOOK / NEWSLETTER */
+  .guestbook{
+    background:var(--cream);
+    color:var(--ink);border:3px solid var(--ink);border-radius:10px;padding:36px 32px;position:relative;
+    box-shadow:7px 7px 0 var(--ink);
+  }
+  .guestbook-inner{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;}
+  @media (max-width:860px){ .guestbook-inner{grid-template-columns:1fr;} }
+  .guestbook h2{color:var(--pink-hot);font-size:clamp(22px,3vw,30px);text-shadow:none;}
+  .guestbook p{color:rgba(28,10,18,0.75);margin-top:10px;font-size:14.5px;}
 
-  form.signup{display:flex;flex-direction:column;gap:14px;}
-  .field{display:flex;flex-direction:column;gap:6px;}
-  .field label{font-family:var(--mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,246,238,0.6);}
+  form.signup{display:flex;flex-direction:column;gap:12px;}
+  .field{display:flex;flex-direction:column;gap:5px;}
+  .field label{font-family:var(--body);font-weight:700;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;color:var(--pink-hot);}
   .field input{
-    background:rgba(255,246,238,0.07);border:1px solid rgba(255,246,238,0.25);
-    border-radius:6px;padding:13px 14px;color:var(--cream);font-family:var(--body);font-size:15px;
+    background:var(--cream);border:2px solid var(--ink);border-radius:6px;padding:12px 13px;color:var(--ink);
+    font-family:var(--body);font-size:14.5px;
   }
-  .field input::placeholder{color:rgba(255,246,238,0.35);}
-  .field input:focus{outline:2px solid var(--orange);outline-offset:1px;border-color:var(--orange);}
-  form.signup .submit-row{display:flex;align-items:center;gap:14px;margin-top:6px;flex-wrap:wrap;}
+  .field input:focus{outline:2px solid var(--pink-hot);outline-offset:1px;}
+  form.signup .submit-row{display:flex;align-items:center;gap:12px;margin-top:4px;flex-wrap:wrap;}
   .submit-btn{
-    font-family:var(--mono);font-size:13px;background:linear-gradient(90deg, var(--orange), var(--pink-deep));color:var(--cream);
-    border:none;padding:14px 26px;border-radius:30px;cursor:pointer;
-    transition:filter .15s ease, transform .15s ease;
+    font-family:var(--body);font-weight:700;font-size:13px;background:var(--orange);color:var(--ink);
+    border:2.5px solid var(--ink);padding:13px 24px;border-radius:8px;cursor:pointer;
+    box-shadow:4px 4px 0 var(--ink);
   }
-  .submit-btn:hover{filter:brightness(1.08);transform:translateY(-1px);}
-  .form-note{font-size:12.5px;color:rgba(255,246,238,0.45);}
-  .success-msg{display:none;font-family:var(--mono);font-size:13px;color:var(--peach);}
+  .submit-btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);}
+  .form-note{font-size:11.5px;color:rgba(28,10,18,0.55);}
+  .success-msg{display:none;font-family:var(--body);font-weight:700;font-size:13px;color:var(--pink-hot);}
 
   /* FOOTER */
-  footer{background:var(--ink);color:rgba(255,246,238,0.7);padding:48px 0 30px;}
-  .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+  footer{background:var(--ink);color:rgba(255,242,232,0.75);padding:44px 0 26px;border-top:5px solid var(--orange-light);}
+  .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;}
   footer .brand-mark .name{color:var(--cream);}
-  footer .socials{display:flex;gap:18px;font-family:var(--mono);font-size:13px;}
-  footer .socials a{opacity:0.75;text-decoration:none;}
-  footer .socials a:hover{opacity:1;color:var(--peach);}
-  .footer-bottom{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,246,238,0.12);font-family:var(--mono);font-size:11.5px;color:rgba(255,246,238,0.4);}
+  .socials{display:flex;gap:16px;font-family:var(--body);font-weight:700;font-size:12.5px;}
+  .socials a{opacity:0.85;text-decoration:none;}
+  .socials a:hover{opacity:1;color:var(--orange-light);}
+  .footer-bottom{margin-top:24px;padding-top:16px;border-top:2px dashed rgba(255,242,232,0.2);font-family:var(--body);font-size:11px;color:rgba(255,242,232,0.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
 
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{transition:none !important;} }
 </style>
@@ -158,15 +219,34 @@
 <header class="site-nav">
   <div class="nav-inner">
     <a class="brand-mark" href="#top">
-      <span class="stamp">MO</span>
-      <span class="name">Marilyn Ogunfowora</span>
+      <span class="sun-mark">
+        <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="currentColor" stroke-width="7" stroke-linecap="round">
+            <line x1="144.4" y1="88.1" x2="180.8" y2="78.3"/>
+            <line x1="139.8" y1="77.0" x2="177.1" y2="55.5" stroke-dasharray="10 8"/>
+            <line x1="132.5" y1="67.5" x2="166.2" y2="33.8"/>
+            <line x1="123.0" y1="60.2" x2="148.5" y2="16.0" stroke-dasharray="10 8"/>
+            <line x1="111.9" y1="55.6" x2="125.7" y2="4.1"/>
+            <line x1="100.0" y1="54.0" x2="100.0" y2="0.0" stroke-dasharray="10 8"/>
+            <line x1="88.1" y1="55.6" x2="74.3" y2="4.1"/>
+            <line x1="77.0" y1="60.2" x2="51.5" y2="16.0" stroke-dasharray="10 8"/>
+            <line x1="67.5" y1="67.5" x2="33.8" y2="33.8"/>
+            <line x1="60.2" y1="77.0" x2="22.9" y2="55.5" stroke-dasharray="10 8"/>
+            <line x1="55.6" y1="88.1" x2="19.2" y2="78.3"/>
+          </g>
+          <path d="M60 100 A40 40 0 0 1 140 100 Z" fill="currentColor"/>
+          <line x1="10" y1="100" x2="190" y2="100" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="name">Marilyn's Pilates</span>
     </a>
     <nav class="links nav-mobile-hide">
-      <a href="#about">About</a>
+      <a href="#about">About Me</a>
       <a href="#journey">My Journey</a>
       <a href="#popups">Free Pop-Ups</a>
+      <a href="blog.html">My Blog</a>
     </nav>
-    <a class="nav-cta" href="#signup">Join the Newsletter</a>
+    <a class="nav-cta" href="#signup">Add Me (Newsletter)</a>
   </div>
 </header>
 
@@ -174,51 +254,34 @@
 
   <!-- HERO -->
   <section class="hero">
+    <span class="sun-mark hero-sun-watermark">
+      <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" stroke-width="4" stroke-linecap="round">
+          <line x1="144.4" y1="88.1" x2="180.8" y2="78.3"/>
+          <line x1="139.8" y1="77.0" x2="177.1" y2="55.5" stroke-dasharray="6 5"/>
+          <line x1="132.5" y1="67.5" x2="166.2" y2="33.8"/>
+          <line x1="123.0" y1="60.2" x2="148.5" y2="16.0" stroke-dasharray="6 5"/>
+          <line x1="111.9" y1="55.6" x2="125.7" y2="4.1"/>
+          <line x1="100.0" y1="54.0" x2="100.0" y2="0.0" stroke-dasharray="6 5"/>
+          <line x1="88.1" y1="55.6" x2="74.3" y2="4.1"/>
+          <line x1="77.0" y1="60.2" x2="51.5" y2="16.0" stroke-dasharray="6 5"/>
+          <line x1="67.5" y1="67.5" x2="33.8" y2="33.8"/>
+          <line x1="60.2" y1="77.0" x2="22.9" y2="55.5" stroke-dasharray="6 5"/>
+          <line x1="55.6" y1="88.1" x2="19.2" y2="78.3"/>
+        </g>
+        <path d="M60 100 A40 40 0 0 1 140 100 Z" fill="currentColor"/>
+        <line x1="10" y1="100" x2="190" y2="100" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+    </span>
     <div class="hero-inner">
-      <div>
-        <span class="plate">Certified Pilates Instructor</span>
-        <h1>Movement, taught with intention.
-          <span class="tagline">Your favorite hour of the day.</span>
-        </h1>
-        <p class="sub">I'm Marilyn — a Mat and Reformer certified Pilates instructor, currently deep in advanced teacher training. I teach free pop-up classes around the community while I train, and I'd love for you to come move with me.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="#signup">Get pop-up dates</a>
-          <a class="btn btn-ghost" href="#journey">My certification journey</a>
-        </div>
-      </div>
-
-      <div class="sunrise-frame">
-        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#ffd8a8"/>
-              <stop offset="45%" stop-color="#ef6a2c"/>
-              <stop offset="100%" stop-color="#a8134f"/>
-            </linearGradient>
-            <mask id="sunMask">
-              <rect x="0" y="0" width="400" height="500" fill="#fff"/>
-              <rect x="0" y="248" width="400" height="6" fill="#000"/>
-              <rect x="0" y="268" width="400" height="8" fill="#000"/>
-              <rect x="0" y="292" width="400" height="10" fill="#000"/>
-              <rect x="0" y="320" width="400" height="13" fill="#000"/>
-              <rect x="0" y="352" width="400" height="17" fill="#000"/>
-              <rect x="0" y="390" width="400" height="22" fill="#000"/>
-            </mask>
-          </defs>
-
-          <g stroke="rgba(255,246,238,0.35)" stroke-width="2">
-            <line x1="200" y1="230" x2="200" y2="150"/>
-            <line x1="140" y1="245" x2="90" y2="185"/>
-            <line x1="260" y1="245" x2="310" y2="185"/>
-            <line x1="105" y1="270" x2="45" y2="250"/>
-            <line x1="295" y1="270" x2="355" y2="250"/>
-          </g>
-
-          <circle cx="200" cy="235" r="115" fill="url(#sunGrad)" mask="url(#sunMask)"/>
-
-          <line x1="0" y1="330" x2="400" y2="330" stroke="#fff6ee" stroke-width="2" opacity="0.55"/>
-        </svg>
-        <span class="cap">Marietta, GA · sunrise sessions</span>
+      <h1 class="display glitter" style="font-size:clamp(26px,4.6vw,48px);text-shadow:none;">Marilyn's Pilates</h1>
+      <span class="badge" style="margin-top:14px;">&#9733; Certified Pilates Instructor In Training &#9733;</span>
+      <h2 class="glitter" style="margin-top:18px;font-size:clamp(30px,6vw,60px);">Movement,<br>taught with intention.</h2>
+      <span class="tagline">Your favorite hour of the day.</span>
+      <p class="sub">Hi, I'm Marilyn! A Pilates instructor currently working toward my full certification. I teach free pop-up classes around the community while I train, and I would love for you to come move with me.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#signup">Get Pop-Up Dates</a>
+        <a class="btn btn-ghost" href="#about">More About Me</a>
       </div>
     </div>
   </section>
@@ -226,117 +289,159 @@
   <!-- ABOUT -->
   <section id="about">
     <div class="wrap">
-      <div class="about-grid">
-        <div>
-          <span class="eyebrow">About Marilyn</span>
-          <h2 style="margin-top:12px;font-size:clamp(26px,3.2vw,36px);">Teaching Pilates the way it changed me.</h2>
-        </div>
-        <div>
-          <p>I hold dual Mat and Reformer certifications through Club Pilates, and I'm currently completing an advanced Pilates teacher training program to deepen my practice even further — from special-population programming to more nuanced, client-specific instruction.</p>
-          <p>I believe good instruction meets people where they actually are, not where a standard class assumes they should be. That's the philosophy I bring to every session, whether it's a private client or a free community pop-up.</p>
-          <div class="badges">
-            <span>Mat Certified</span>
-            <span>Reformer Certified</span>
-            <span>Teacher Training — In Progress</span>
+      <div class="module">
+        <div class="module-title">&#9733; ABOUT ME &#9733;</div>
+        <div class="module-body">
+          <div class="about-grid">
+            <div>
+              <span class="eyebrow" style="color:var(--pink-hot);">The Basics</span>
+              <h2 style="color:var(--ink);text-shadow:none;font-size:clamp(24px,3.4vw,32px);margin-top:10px;">Teaching Pilates the way it changed me.</h2>
+            </div>
+            <div>
+              <p>I'm a Pilates instructor currently working toward my full certification. Every class I teach right now is part of that process. Real practice, with real people, not just theory.</p>
+              <p>I believe good instruction meets people where they actually are, not where a standard class assumes they should be. That's the philosophy I bring to every session, for a private client or a free community pop-up.</p>
+              <span class="status-line">Currently: working toward my Pilates certification &#9825;</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="divider"><span class="sun-chip"></span></div>
+  <div class="sun-divider">
+    <span class="sun-mark">
+      <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" stroke-width="6" stroke-linecap="round">
+          <line x1="144.4" y1="88.1" x2="180.8" y2="78.3"/>
+          <line x1="139.8" y1="77.0" x2="177.1" y2="55.5" stroke-dasharray="9 7"/>
+          <line x1="132.5" y1="67.5" x2="166.2" y2="33.8"/>
+          <line x1="123.0" y1="60.2" x2="148.5" y2="16.0" stroke-dasharray="9 7"/>
+          <line x1="111.9" y1="55.6" x2="125.7" y2="4.1"/>
+          <line x1="100.0" y1="54.0" x2="100.0" y2="0.0" stroke-dasharray="9 7"/>
+          <line x1="88.1" y1="55.6" x2="74.3" y2="4.1"/>
+          <line x1="77.0" y1="60.2" x2="51.5" y2="16.0" stroke-dasharray="9 7"/>
+          <line x1="67.5" y1="67.5" x2="33.8" y2="33.8"/>
+          <line x1="60.2" y1="77.0" x2="22.9" y2="55.5" stroke-dasharray="9 7"/>
+          <line x1="55.6" y1="88.1" x2="19.2" y2="78.3"/>
+        </g>
+        <path d="M60 100 A40 40 0 0 1 140 100 Z" fill="currentColor"/>
+        <line x1="10" y1="100" x2="190" y2="100" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+      </svg>
+    </span>
+  </div>
 
-  <!-- JOURNEY TIMELINE -->
+  <!-- PHOTO BREAK, polaroid style -->
+  <div class="photo-break">
+    <div class="wrap">
+      <div class="polaroid">
+        <img src="https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?auto=format&fit=crop&w=1000&q=80" alt="Pink and orange sunset over the sea">
+        <span class="cap">this is your hour &#9829;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- JOURNEY -->
   <section id="journey">
     <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">The Journey</span>
-        <h2>From certified instructor to trained teacher.</h2>
-        <p>Every pop-up class is part of the same throughline — practicing, refining, and sharing what I'm learning in real time.</p>
-      </div>
-
-      <div class="timeline">
-        <div class="tl-item">
-          <div class="stage">Foundation</div>
-          <h3>Mat Certification, Club Pilates</h3>
-          <p>Built the foundational teaching base — classical mat sequencing, cueing, and hands-on instruction.</p>
-        </div>
-        <div class="tl-item">
-          <div class="stage">Advancement</div>
-          <h3>Reformer Certification, Club Pilates</h3>
-          <p>Expanded into reformer-based instruction, spring-loaded resistance work, and full-apparatus programming.</p>
-        </div>
-        <div class="tl-item current">
-          <div class="stage">Now</div>
-          <h3>Advanced Teacher Training — In Progress</h3>
-          <p>Currently completing coursework and practical assessments, including specialized work with clients managing joint conditions and other special populations.</p>
+      <div class="module">
+        <div class="module-title">&#9733; MY JOURNEY &#9733;</div>
+        <div class="module-body">
+          <span class="eyebrow" style="color:var(--pink-hot);">Status Update</span>
+          <h2 style="color:var(--ink);text-shadow:none;font-size:clamp(22px,3vw,30px);margin-top:10px;">Still learning, still teaching.</h2>
+          <p class="journey-msg">I'm currently working toward my Pilates certification, and I love sharing what I'm learning along the way through free community classes. Come move with me while I grow.</p>
+          <div style="margin-top:20px;">
+            <span class="counter-box">
+              <span class="counter-digits">00042</span>
+              <span class="counter-label">visitors<br>and counting</span>
+            </span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="divider"><span class="sun-chip"></span></div>
+  <div class="sun-divider">
+    <span class="sun-mark">
+      <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="currentColor" stroke-width="6" stroke-linecap="round">
+          <line x1="144.4" y1="88.1" x2="180.8" y2="78.3"/>
+          <line x1="139.8" y1="77.0" x2="177.1" y2="55.5" stroke-dasharray="9 7"/>
+          <line x1="132.5" y1="67.5" x2="166.2" y2="33.8"/>
+          <line x1="123.0" y1="60.2" x2="148.5" y2="16.0" stroke-dasharray="9 7"/>
+          <line x1="111.9" y1="55.6" x2="125.7" y2="4.1"/>
+          <line x1="100.0" y1="54.0" x2="100.0" y2="0.0" stroke-dasharray="9 7"/>
+          <line x1="88.1" y1="55.6" x2="74.3" y2="4.1"/>
+          <line x1="77.0" y1="60.2" x2="51.5" y2="16.0" stroke-dasharray="9 7"/>
+          <line x1="67.5" y1="67.5" x2="33.8" y2="33.8"/>
+          <line x1="60.2" y1="77.0" x2="22.9" y2="55.5" stroke-dasharray="9 7"/>
+          <line x1="55.6" y1="88.1" x2="19.2" y2="78.3"/>
+        </g>
+        <path d="M60 100 A40 40 0 0 1 140 100 Z" fill="currentColor"/>
+        <line x1="10" y1="100" x2="190" y2="100" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+      </svg>
+    </span>
+  </div>
 
-  <!-- FREE POP-UPS -->
+  <!-- FREE POP-UPS, bulletin board style -->
   <section id="popups">
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Free Community Pop-Ups</span>
-        <h2>Come move with me — no cost, just show up.</h2>
+        <h2>Free Pop-Up Pilates Classes in Marietta, GA</h2>
         <p>While I finish my certification, I'm hosting free pop-up mat classes around the community. New dates are announced through the newsletter first.</p>
       </div>
 
       <div class="pop-grid">
-        <div class="ticket">
+        <div class="flyer">
+          <span class="pin">&#128204;</span>
           <span class="free-tag">Free</span>
           <div class="date">Date TBA</div>
-          <div class="place">Location to be announced</div>
-          <div class="desc">All-levels mat flow — bring your own mat, water, and an open mind.</div>
+          <div class="desc">All-levels mat flow. Bring your own mat, water, and an open mind.</div>
           <div class="perf">RSVP via newsletter</div>
         </div>
-        <div class="ticket">
+        <div class="flyer">
+          <span class="pin">&#128204;</span>
           <span class="free-tag">Free</span>
           <div class="date">Date TBA</div>
-          <div class="place">Location to be announced</div>
-          <div class="desc">Beginner-friendly session — no experience needed.</div>
+          <div class="desc">Beginner friendly session. No experience needed.</div>
           <div class="perf">RSVP via newsletter</div>
         </div>
-        <div class="ticket">
+        <div class="flyer">
+          <span class="pin">&#128204;</span>
           <span class="free-tag">Free</span>
           <div class="date">Date TBA</div>
-          <div class="place">Location to be announced</div>
-          <div class="desc">Community flow — spots are limited, first come first served.</div>
+          <div class="desc">Community flow. Spots are limited, first come first served.</div>
           <div class="perf">RSVP via newsletter</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NEWSLETTER SIGNUP -->
+  <!-- GUESTBOOK / NEWSLETTER SIGNUP -->
   <section id="signup" class="tight">
     <div class="wrap">
-      <div class="newsletter">
-        <div class="newsletter-inner">
+      <div class="guestbook">
+        <div class="guestbook-inner">
           <div>
-            <span class="eyebrow on-dark">Stay In The Loop</span>
+            <span class="eyebrow" style="color:var(--pink-hot);">Sign My Guestbook</span>
             <h2>Get pop-up dates before anyone else.</h2>
-            <p>One email whenever a new free pop-up is scheduled, plus occasional notes on my certification journey. No spam, unsubscribe anytime.</p>
+            <p>Leave your name and email and I will send you an email whenever a new free pop-up is scheduled, plus occasional notes on my certification journey. No spam, unsubscribe anytime.</p>
           </div>
 
           <form class="signup" id="newsletterForm">
             <div class="field">
-              <label for="name">Name</label>
+              <label for="name">Your Name</label>
               <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
             <div class="field">
-              <label for="email">Email</label>
+              <label for="email">Your Email</label>
               <input type="email" id="email" name="email" placeholder="you@email.com" required>
             </div>
             <div class="submit-row">
-              <button type="submit" class="submit-btn">Sign up for pop-up updates</button>
+              <button type="submit" class="submit-btn">Sign My Guestbook</button>
               <span class="form-note">Free. No spam.</span>
             </div>
-            <span class="success-msg" id="successMsg">You're on the list — watch your inbox for the next pop-up date.</span>
+            <span class="success-msg" id="successMsg">Thanks for signing my guestbook! Watch your inbox for the next pop-up date.</span>
           </form>
         </div>
       </div>
@@ -349,15 +454,36 @@
   <div class="wrap">
     <div class="footer-inner">
       <a class="brand-mark" href="#top">
-        <span class="stamp">MO</span>
-        <span class="name">Marilyn Ogunfowora</span>
+        <span class="sun-mark" style="width:26px;height:17px;color:var(--orange-light);">
+          <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="7" stroke-linecap="round">
+              <line x1="144.4" y1="88.1" x2="180.8" y2="78.3"/>
+              <line x1="139.8" y1="77.0" x2="177.1" y2="55.5" stroke-dasharray="10 8"/>
+              <line x1="132.5" y1="67.5" x2="166.2" y2="33.8"/>
+              <line x1="123.0" y1="60.2" x2="148.5" y2="16.0" stroke-dasharray="10 8"/>
+              <line x1="111.9" y1="55.6" x2="125.7" y2="4.1"/>
+              <line x1="100.0" y1="54.0" x2="100.0" y2="0.0" stroke-dasharray="10 8"/>
+              <line x1="88.1" y1="55.6" x2="74.3" y2="4.1"/>
+              <line x1="77.0" y1="60.2" x2="51.5" y2="16.0" stroke-dasharray="10 8"/>
+              <line x1="67.5" y1="67.5" x2="33.8" y2="33.8"/>
+              <line x1="60.2" y1="77.0" x2="22.9" y2="55.5" stroke-dasharray="10 8"/>
+              <line x1="55.6" y1="88.1" x2="19.2" y2="78.3"/>
+            </g>
+            <path d="M60 100 A40 40 0 0 1 140 100 Z" fill="currentColor"/>
+            <line x1="10" y1="100" x2="190" y2="100" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="name">Marilyn's Pilates</span>
       </a>
       <div class="socials">
         <a href="#">Instagram</a>
         <a href="mailto:hello@marilynpilates.com">Email</a>
       </div>
     </div>
-    <div class="footer-bottom">© 2026 Marilyn Ogunfowora. All rights reserved.</div>
+    <div class="footer-bottom">
+      <span>&#169; 2026 Marilyn. Thanks for stopping by my page.</span>
+      <span>Marietta, GA</span>
+    </div>
   </div>
 </footer>
 
